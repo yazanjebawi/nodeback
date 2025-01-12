@@ -8,7 +8,7 @@ const app = express();
 app.use(bodyParser.json());
 app.use('/api', userRouters);
 //  conect mongose
-mongose.connect(process.env.MONGO_URI,{
+mongose.connect('mongodb+srv://yazan:Yazan1964@cluster0.nvhbn.mongodb.net/store',{
     useNewUrlParser:true,
     useUnifiedTopology:true,
 }).then(()=>{
